@@ -1,0 +1,52 @@
+/* Start box */
+.d-flex {
+  display: flex;
+}
+.align-c {
+  align-items: center;
+}
+/* End box */
+/* Start colors */
+.bg-white {
+  background-color: white;
+}
+/* End colors */
+/* start position */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+/* End position */
+/* start padding and margin */
+.p-20 {
+  padding: 20px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.rad-6 {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* end padding and margin */
+/* start fonts */
+.txt-c {
+  text-align: center;
+}
+
+/* end fonts */
+/* Start media query */
+@media (max-width: 767px) {
+  .hide-ele {
+    display: none;
+  }
+}
+/* End media query */
