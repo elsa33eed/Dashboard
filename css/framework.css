@@ -1,14 +1,57 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
+}
 /* Start box */
+.flow-hidden {
+  overflow: hidden;
+}
 .d-flex {
   display: flex;
+}
+.space-between {
+  justify-content: space-between;
 }
 .align-c {
   align-items: center;
 }
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+.d-block {
+  display: block;
+}
+/* start size */
+.w-fit {
+  width: fit-content;
+}
+.w-full {
+  width: 100%;
+}
+/* end size */
 /* End box */
 /* Start colors */
 .bg-white {
   background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.c-gray {
+  color: var(--gray-color);
+}
+.c-white {
+  color: white;
 }
 /* End colors */
 /* start position */
@@ -20,14 +63,41 @@
 }
 /* End position */
 /* start padding and margin */
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
 .p-20 {
   padding: 20px;
+}
+.m-0 {
+  margin: 0;
 }
 .m-20 {
   margin: 20px;
 }
+.mt-5 {
+  margin-top: 5px;
+}
 .mt-0 {
   margin-top: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.ml-20 {
+  margin-left: 20px;
 }
 .rad-6 {
   border-radius: 6px;
@@ -35,6 +105,13 @@
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 /* end padding and margin */
 /* start fonts */
@@ -49,4 +126,25 @@
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .d-block-mob {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .txt-center-mob {
+    text-align: center;
+  }
+}
 /* End media query */
+/* Start conponents */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+/* End conponents */
