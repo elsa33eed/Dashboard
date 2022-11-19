@@ -90,13 +90,143 @@
         <!-- End header  -->
         <!-- start setting  -->
         <h1 class="speacial p-relative">Setting</h1>
-        <div class="setting-page">
-          <!-- Start toggle box -->
-          <label>
-            <input class="toggle-box" type="checkbox" checked />
-            <div class="toggle-switch"></div>
-          </label>
-          <!-- End toggle box -->
+        <div class="setting-page m-20 d-grid gap-20">
+          <div class="box bg-white p-20 rad-10 d-block-mob txt-center-mob">
+            <h2 class="mt-0 mb-10">Site Control</h2>
+            <p class="mt-0 mb-20 fs-14 c-gray">
+              Control The Website If There Is Maintenance
+            </p>
+            <div class="mb-15 spacebetween-flex">
+              <div class="div">
+                <h4 class="mb-10">Website Control</h4>
+                <p class="fs-13 c-gray mt-5 mb-0">
+                  Open/Close Website And Type The Reason
+                </p>
+              </div>
+              <div class="div">
+                <label>
+                  <input class="toggle-box" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <textarea
+              class="close-message w-full p-10 rad-6 d-block"
+              placeholder="Close Message Content"
+              spellcheck="false"
+            ></textarea>
+          </div>
+          <div class="box bg-white p-20 rad-10 d-block-mob txt-center-mob">
+            <h2 class="mt-0 mb-10">General Info</h2>
+            <p class="mt-0 fs-14 c-gray mb-20">
+              General Information About Your Account
+            </p>
+            <div class="div mb-10">
+              <label class="fs-14 d-block mb-10 c-gray" for="first"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="w-full b-none rad-6 p-10 d-block b-ccc"
+                placeholder="First Name"
+                id="first"
+              />
+            </div>
+            <div class="div mb-10">
+              <label class="c-gray mb-5 d-block fs-14" for="last">
+                Last Name
+              </label>
+              <input
+                type="text"
+                class="d-block w-full b-ccc b-none p-10 rad-6"
+                placeholder="Last Name"
+                id="last"
+              />
+            </div>
+            <div class="div">
+              <label class="fs-14 c-gray d-block mb-5" for="email">Email</label>
+              <input
+                type="email"
+                class="email mr-10 w-full d-block b-ccc b-none p-10 rad-6"
+                value="elsa33eed@gmail.com"
+                id="email"
+                disabled
+              />
+              <a class="c-blue" href="#">Change</a>
+            </div>
+          </div>
+          <div class="box bg-white p-20 rad-10 d-block-mob txt-center-mob">
+            <h2 class="mt-0 mb-10">Security Info</h2>
+            <p class="c-gray fs-14 mt-0 mb-20">
+              Security Information About Your Account
+            </p>
+            <div class="security-box spacebetween-flex mb-15">
+              <div class="info">
+                <span>Password</span>
+                <p class="mt-5 fs-13 c-gray">Last Change On 25/10/2021</p>
+              </div>
+              <a class="btn-shape transition bg-blue c-white" href="#"
+                >Change</a
+              >
+            </div>
+            <div class="security-box spacebetween-flex mb-15">
+              <div class="info">
+                <span>Two-Factor Authentication</span>
+                <p class="mt-5 fs-13 c-gray">Enable/Disable The Feature</p>
+              </div>
+              <label class="d-flex">
+                <input class="toggle-box" type="checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="security-box spacebetween-flex">
+              <div class="info">
+                <span>Devices</span>
+                <p class="mt-5 fs-13 c-gray">Check The Login Devices List</p>
+              </div>
+              <a class="btn-shape transition bg-blue c-white" href="#"
+                >Devices</a
+              >
+            </div>
+          </div>
+          <div
+            class="social-box bg-white p-20 rad-10 d-block-mob txt-center-mob"
+          >
+            <h2 class="mt-0 mb-10">Social Info</h2>
+            <p class="c-gray fs-14 mt-0 mb-20">Social Media Information</p>
+            <div class="d-flex align-c mb-15">
+              <i class="fa-brands fa-twitter c-gray transition center-flex"></i>
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Twitter Username"
+              />
+            </div>
+            <div class="d-flex align-c mb-15">
+              <i class="fa-brands fa-facebook-f center-flex c-gray"></i>
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Facebook Username"
+              />
+            </div>
+            <div class="d-flex align-c mb-15">
+              <i class="fa-brands fa-linkedin center-flex c-gray"></i>
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Linkedin Username"
+              />
+            </div>
+            <div class="d-flex align-c">
+              <i class="fa-brands fa-youtube center-flex c-gray"></i>
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Youtube Username"
+              />
+            </div>
+          </div>
         </div>
         <!-- end setting -->
       </div>

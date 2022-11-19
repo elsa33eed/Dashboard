@@ -39,6 +39,58 @@ ul {
 a {
   text-decoration: none;
 }
+/* start toggle check */
+.toggle-box {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  position: absolute;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.toggle-box:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-box:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+/* end toggle check */
 /* Genral codes */
 
 .page {
@@ -604,55 +656,46 @@ a {
 /* End content */
 
 /* start Setting box */
-.toggle-box {
-  -webkit-appearance: none;
-  appearance: none;
+.setting-page .box .close-message {
+  border: 1px solid #ccc;
+  resize: none;
+  min-height: 150px;
 }
-.toggle-switch {
-  background-color: #ccc;
-  width: 78px;
-  height: 32px;
-  border-radius: 16px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.3s;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+.setting-page .box .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
 }
-.toggle-switch::before {
-  font-family: var(--fa-style-family-classic);
-  content: "\f00d";
-  font-weight: 900;
-  position: absolute;
-  background-color: white;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  top: 4px;
-  left: 4px;
+.setting-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+.setting-page .box .security-box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.setting-page .box .security-box a:hover {
+  background-color: var(--blue-alt-color);
+}
+.setting-page .box .security-box {
+  padding-bottom: 15px;
+}
+.setting-page .social-box i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #aaa;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
 }
-.toggle-box:checked + .toggle-switch {
-  background-color: var(--blue-color);
+.setting-page .social-box > div:focus-within i {
+  color: black;
 }
-.toggle-box:checked + .toggle-switch::before {
-  content: "\f00c";
-  left: 50px;
-  color: var(--blue-color);
+.setting-page .social-box input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
 }
-
 /* end Setting box */

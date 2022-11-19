@@ -147,11 +147,17 @@
 .mt-25 {
   margin-top: 25px;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
 .mb-10 {
   margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -170,6 +176,9 @@
 }
 .b-none {
   border: none;
+}
+.b-ccc {
+  border: 1px solid #ccc;
 }
 .rad-6 {
   border-radius: 6px;
@@ -191,6 +200,13 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.transition {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 /* end padding and margin */
 /* start fonts */
@@ -233,6 +249,12 @@
 @media (max-width: 767px) {
   .txt-center-mob {
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .flex-direction-mob {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* End media query */
