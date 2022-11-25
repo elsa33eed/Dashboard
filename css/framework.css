@@ -24,6 +24,16 @@
 }
 .d-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
 }
 .gap-20 {
   gap: 20px;
@@ -125,6 +135,15 @@
 }
 .m-0 {
   margin: 0;
+}
+.m-5 {
+  margin: 5px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-15 {
+  margin: 15px;
 }
 .m-20 {
   margin: 20px;
