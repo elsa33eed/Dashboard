@@ -9,7 +9,7 @@
 <h3>Build with:</h3>
 
 » HTML <br>
-» Css (MY Framework)
+» Css 
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
